@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+mypy = "*"
+pytest = "*"
+isort = "*"
+autoflake = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+sqlalchemy-stubs = "==0.3"
+flake8 = "==3.7.9"
+
+[packages]
+fastapi = {extras = ["all"],version = "==0.61.2"}
+sqlalchemy = "==1.3.20"
+alembic = "==1.4.3"
+tenacity = "==6.2.0"
+psycopg2-binary = "==2.8.6"
+passlib = {extras = ["bcrypt"],version = "==1.7.4"}
+sqlalchemy-continuum = "*"
+python-jose = {extras = ["cryptography"],version = "*"}
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true

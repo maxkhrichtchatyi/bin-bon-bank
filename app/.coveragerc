@@ -1,0 +1,9 @@
+[run]
+omit =
+    app/tests_pre_start.py,
+    app/backend_pre_start.py,
+    app/tests/*,
+    app/core/*,
+    app/db/*,
+    app/schemas/*,
+    app/main.py
